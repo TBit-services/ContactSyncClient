@@ -25,6 +25,4 @@ object Settings {
     const val PREFERRED_THEME = "preferred_theme"
     const val PREFERRED_THEME_DEFAULT = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
 
-    const val PREFERRED_TASKS_PROVIDER = "preferred_tasks_provider"
-
 }

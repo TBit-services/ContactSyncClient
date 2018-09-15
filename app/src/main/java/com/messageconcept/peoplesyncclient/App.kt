@@ -71,12 +71,6 @@ class App: Application(), Thread.UncaughtExceptionHandler {
             // create/update app shortcuts
             UiUtils.updateShortcuts(this)
 
-            // watch installed/removed apps
-            TasksWatcher(this)
-
-            // check whether a tasks app is currently installed
-            TasksWatcher.updateTaskSync(this)
-
             // check/repair sync intervals
             AccountSettings.repairSyncIntervals(this)
 
