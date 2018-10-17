@@ -1,7 +1,7 @@
-package at.bitfire.davdroid.resource.contactrow
+package com.messageconcept.peoplesyncclient.resource.contactrow
 
 import android.content.ContentValues
-import at.bitfire.davdroid.model.UnknownProperties
+import com.messageconcept.peoplesyncclient.model.UnknownProperties
 import at.bitfire.vcard4android.Contact
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull

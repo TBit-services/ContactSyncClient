@@ -1,4 +1,4 @@
-package at.bitfire.davdroid.ui
+package com.messageconcept.peoplesyncclient.ui
 
 import android.view.Gravity
 import android.view.View
@@ -16,7 +16,7 @@ import androidx.test.espresso.util.HumanReadables
 import androidx.test.espresso.util.TreeIterables
 import androidx.test.ext.junit.rules.activityScenarioRule
 import androidx.test.filters.LargeTest
-import at.bitfire.davdroid.R
+import com.messageconcept.peoplesyncclient.R
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers

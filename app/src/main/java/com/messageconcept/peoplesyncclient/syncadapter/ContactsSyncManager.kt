@@ -6,7 +6,7 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-package at.bitfire.davdroid.syncadapter
+package com.messageconcept.peoplesyncclient.syncadapter
 
 import android.accounts.Account
 import android.content.*
@@ -17,15 +17,15 @@ import at.bitfire.dav4jvm.DavResponseCallback
 import at.bitfire.dav4jvm.Response
 import at.bitfire.dav4jvm.exception.DavException
 import at.bitfire.dav4jvm.property.*
-import at.bitfire.davdroid.DavUtils
-import at.bitfire.davdroid.HttpClient
-import at.bitfire.davdroid.R
-import at.bitfire.davdroid.log.Logger
-import at.bitfire.davdroid.model.SyncState
-import at.bitfire.davdroid.resource.*
-import at.bitfire.davdroid.settings.AccountSettings
-import at.bitfire.davdroid.syncadapter.groups.CategoriesStrategy
-import at.bitfire.davdroid.syncadapter.groups.VCard4Strategy
+import com.messageconcept.peoplesyncclient.DavUtils
+import com.messageconcept.peoplesyncclient.HttpClient
+import com.messageconcept.peoplesyncclient.R
+import com.messageconcept.peoplesyncclient.log.Logger
+import com.messageconcept.peoplesyncclient.model.SyncState
+import com.messageconcept.peoplesyncclient.resource.*
+import com.messageconcept.peoplesyncclient.settings.AccountSettings
+import com.messageconcept.peoplesyncclient.syncadapter.groups.CategoriesStrategy
+import com.messageconcept.peoplesyncclient.syncadapter.groups.VCard4Strategy
 import at.bitfire.vcard4android.Contact
 import at.bitfire.vcard4android.GroupMethod
 import ezvcard.VCardVersion

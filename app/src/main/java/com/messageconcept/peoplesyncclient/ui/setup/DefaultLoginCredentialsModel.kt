@@ -6,7 +6,7 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-package at.bitfire.davdroid.ui.setup
+package com.messageconcept.peoplesyncclient.ui.setup
 
 import android.app.Application
 import android.content.Context
@@ -20,7 +20,7 @@ import android.widget.RadioGroup
 import androidx.annotation.MainThread
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import at.bitfire.davdroid.R
+import com.messageconcept.peoplesyncclient.R
 import java.io.InputStreamReader
 import java.util.regex.Pattern
 

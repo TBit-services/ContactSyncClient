@@ -1,11 +1,11 @@
-package at.bitfire.davdroid.ui.account
+package com.messageconcept.peoplesyncclient.ui.account
 
 import android.content.Intent
 import android.view.*
-import at.bitfire.davdroid.PermissionUtils
-import at.bitfire.davdroid.R
-import at.bitfire.davdroid.databinding.AccountCarddavItemBinding
-import at.bitfire.davdroid.model.Collection
+import com.messageconcept.peoplesyncclient.PermissionUtils
+import com.messageconcept.peoplesyncclient.R
+import com.messageconcept.peoplesyncclient.databinding.AccountCarddavItemBinding
+import com.messageconcept.peoplesyncclient.model.Collection
 
 class AddressBooksFragment: CollectionsFragment() {
 

@@ -1,4 +1,4 @@
-package at.bitfire.davdroid.resource
+package com.messageconcept.peoplesyncclient.resource
 
 import android.accounts.Account
 import android.content.ContentProviderClient
@@ -15,7 +15,7 @@ class LocalTestAddressBook(
         get() = throw NotImplementedError()
 
     companion object {
-        val ACCOUNT = Account("LocalTestAddressBook", "at.bitfire.davdroid.test")
+        val ACCOUNT = Account("LocalTestAddressBook", "com.messageconcept.peoplesyncclient.test")
     }
 
 }

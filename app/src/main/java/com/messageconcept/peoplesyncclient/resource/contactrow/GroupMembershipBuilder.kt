@@ -1,8 +1,8 @@
-package at.bitfire.davdroid.resource.contactrow
+package com.messageconcept.peoplesyncclient.resource.contactrow
 
 import android.net.Uri
 import android.provider.ContactsContract.CommonDataKinds.GroupMembership
-import at.bitfire.davdroid.resource.LocalAddressBook
+import com.messageconcept.peoplesyncclient.resource.LocalAddressBook
 import at.bitfire.vcard4android.BatchOperation
 import at.bitfire.vcard4android.Contact
 import at.bitfire.vcard4android.GroupMethod

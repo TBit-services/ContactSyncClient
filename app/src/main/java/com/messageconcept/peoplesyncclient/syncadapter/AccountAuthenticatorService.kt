@@ -5,14 +5,14 @@
  * which accompanies this distribution, and is available at
  * http://www.gnu.org/licenses/gpl.html
  */
-package at.bitfire.davdroid.syncadapter
+package com.messageconcept.peoplesyncclient.syncadapter
 
 import android.accounts.*
 import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import at.bitfire.davdroid.ui.setup.LoginActivity
+import com.messageconcept.peoplesyncclient.ui.setup.LoginActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

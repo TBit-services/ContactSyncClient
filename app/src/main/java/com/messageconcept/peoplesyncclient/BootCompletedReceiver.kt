@@ -1,9 +1,9 @@
-package at.bitfire.davdroid
+package com.messageconcept.peoplesyncclient
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import at.bitfire.davdroid.log.Logger
+import com.messageconcept.peoplesyncclient.log.Logger
 
 /**
  * There are circumstances when Android drops automatic sync of accounts and resets them

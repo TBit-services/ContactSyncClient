@@ -6,7 +6,7 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-package at.bitfire.davdroid.ui
+package com.messageconcept.peoplesyncclient.ui
 
 import android.accounts.AccountManager
 import android.app.Activity
@@ -26,11 +26,11 @@ import androidx.core.content.getSystemService
 import androidx.core.view.GravityCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import at.bitfire.davdroid.DavUtils
-import at.bitfire.davdroid.R
-import at.bitfire.davdroid.databinding.ActivityAccountsBinding
-import at.bitfire.davdroid.ui.intro.IntroActivity
-import at.bitfire.davdroid.ui.setup.LoginActivity
+import com.messageconcept.peoplesyncclient.DavUtils
+import com.messageconcept.peoplesyncclient.R
+import com.messageconcept.peoplesyncclient.databinding.ActivityAccountsBinding
+import com.messageconcept.peoplesyncclient.ui.intro.IntroActivity
+import com.messageconcept.peoplesyncclient.ui.setup.LoginActivity
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.CoroutineScope

@@ -1,13 +1,13 @@
-package at.bitfire.davdroid.ui.account
+package com.messageconcept.peoplesyncclient.ui.account
 
 import android.content.Intent
 import android.view.*
-import at.bitfire.davdroid.Constants
-import at.bitfire.davdroid.PermissionUtils
-import at.bitfire.davdroid.R
-import at.bitfire.davdroid.databinding.AccountCaldavItemBinding
-import at.bitfire.davdroid.model.Collection
-import at.bitfire.davdroid.resource.TaskUtils
+import com.messageconcept.peoplesyncclient.Constants
+import com.messageconcept.peoplesyncclient.PermissionUtils
+import com.messageconcept.peoplesyncclient.R
+import com.messageconcept.peoplesyncclient.databinding.AccountCaldavItemBinding
+import com.messageconcept.peoplesyncclient.model.Collection
+import com.messageconcept.peoplesyncclient.resource.TaskUtils
 
 class CalendarsFragment: CollectionsFragment() {
 

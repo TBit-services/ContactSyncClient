@@ -1,4 +1,4 @@
-package at.bitfire.davdroid
+package com.messageconcept.peoplesyncclient
 
 import android.app.PendingIntent
 import android.app.Service
@@ -6,10 +6,10 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import at.bitfire.davdroid.settings.Settings
-import at.bitfire.davdroid.settings.SettingsManager
-import at.bitfire.davdroid.ui.AppSettingsActivity
-import at.bitfire.davdroid.ui.NotificationUtils
+import com.messageconcept.peoplesyncclient.settings.Settings
+import com.messageconcept.peoplesyncclient.settings.SettingsManager
+import com.messageconcept.peoplesyncclient.ui.AppSettingsActivity
+import com.messageconcept.peoplesyncclient.ui.NotificationUtils
 
 class ForegroundService : Service() {
 

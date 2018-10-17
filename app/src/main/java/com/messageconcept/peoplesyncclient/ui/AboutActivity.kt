@@ -6,7 +6,7 @@
  * http://www.gnu.org/licenses/gpl.html
  */
 
-package at.bitfire.davdroid.ui
+package com.messageconcept.peoplesyncclient.ui
 
 import android.app.Application
 import android.content.Context
@@ -29,13 +29,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import at.bitfire.davdroid.App
-import at.bitfire.davdroid.BuildConfig
-import at.bitfire.davdroid.R
-import at.bitfire.davdroid.databinding.AboutBinding
-import at.bitfire.davdroid.databinding.AboutLanguagesBinding
-import at.bitfire.davdroid.databinding.AboutTranslationBinding
-import at.bitfire.davdroid.databinding.ActivityAboutBinding
+import com.messageconcept.peoplesyncclient.App
+import com.messageconcept.peoplesyncclient.BuildConfig
+import com.messageconcept.peoplesyncclient.R
+import com.messageconcept.peoplesyncclient.databinding.AboutBinding
+import com.messageconcept.peoplesyncclient.databinding.AboutLanguagesBinding
+import com.messageconcept.peoplesyncclient.databinding.AboutTranslationBinding
+import com.messageconcept.peoplesyncclient.databinding.ActivityAboutBinding
 import com.mikepenz.aboutlibraries.Libs
 import com.mikepenz.aboutlibraries.LibsBuilder
 import kotlinx.coroutines.Dispatchers

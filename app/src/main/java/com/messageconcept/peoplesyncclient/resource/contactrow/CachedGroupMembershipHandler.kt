@@ -1,8 +1,8 @@
-package at.bitfire.davdroid.resource.contactrow
+package com.messageconcept.peoplesyncclient.resource.contactrow
 
 import android.content.ContentValues
-import at.bitfire.davdroid.log.Logger
-import at.bitfire.davdroid.resource.LocalContact
+import com.messageconcept.peoplesyncclient.log.Logger
+import com.messageconcept.peoplesyncclient.resource.LocalContact
 import at.bitfire.vcard4android.CachedGroupMembership
 import at.bitfire.vcard4android.Contact
 import at.bitfire.vcard4android.GroupMethod
