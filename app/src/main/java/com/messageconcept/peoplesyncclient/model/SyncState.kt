@@ -2,7 +2,7 @@
  * Copyright © All Contributors. See LICENSE and AUTHORS in the root directory for details.
  **************************************************************************************************/
 
-package at.bitfire.davdroid.model
+package com.messageconcept.peoplesyncclient.model
 
 import at.bitfire.dav4jvm.property.SyncToken
 import org.json.JSONException

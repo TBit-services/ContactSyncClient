@@ -2,11 +2,11 @@
  * Copyright © All Contributors. See LICENSE and AUTHORS in the root directory for details.
  **************************************************************************************************/
 
-package at.bitfire.davdroid.resource
+package com.messageconcept.peoplesyncclient.resource
 
 import android.content.ContentValues
 import android.provider.CalendarContract.Events
-import at.bitfire.davdroid.BuildConfig
+import com.messageconcept.peoplesyncclient.BuildConfig
 import at.bitfire.ical4android.*
 import net.fortuna.ical4j.model.property.ProdId
 import org.apache.commons.lang3.StringUtils
