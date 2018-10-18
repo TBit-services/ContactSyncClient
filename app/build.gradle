@@ -21,7 +21,7 @@ android {
         minSdkVersion 21        // Android 5
         targetSdkVersion 31     // Android 12
 
-        buildConfigField "String", "userAgent", "\"DAVx5\""
+        buildConfigField "String", "userAgent", "\"PeopleSync\""
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
