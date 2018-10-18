@@ -100,7 +100,7 @@
   <!--AccountsActivity-->
   <string name="navigation_drawer_open">Open navigatie drawer</string>
   <string name="navigation_drawer_close">Sluit navigatie drawer</string>
-  <string name="navigation_drawer_subtitle">CalDAV/CardDav Sync adapter</string>
+  <string name="navigation_drawer_subtitle">CardDAV Sync adapter</string>
   <string name="navigation_drawer_about">Over / Licentie</string>
   <string name="navigation_drawer_beta_feedback">Beta terugkoppeling</string>
   <string name="install_email_client">Installeer een e-mail-app a.u.b.</string>
@@ -116,7 +116,7 @@
   <string name="navigation_drawer_donate">Doneren</string>
   <string name="navigation_drawer_privacy_policy">Privacybeleid</string>
   <string name="account_list_no_internet">Geen internetverbinding. Android zal geen synchronisatie uitvoeren.</string>
-  <string name="account_list_empty">Welkom bij PeopleSync!\n\nJe kunt nu een CalDAV/CardDAv account toevoegen.</string>
+  <string name="account_list_empty">Welkom bij PeopleSync!\n\nJe kunt nu een CardDAV account toevoegen.</string>
   <string name="accounts_global_sync_disabled">Systeembrede automatische synchronisatie is uitgeschakeld</string>
   <string name="accounts_global_sync_enable">Inschakelen</string>
   <string name="accounts_sync_all">Alle accounts synchroniseren</string>
