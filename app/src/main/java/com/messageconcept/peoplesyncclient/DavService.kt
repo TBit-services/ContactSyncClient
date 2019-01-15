@@ -291,6 +291,16 @@ class DavService: IntentService("DavService") {
                     queryHomeSets(httpClient, principalUrl)
                 }
 
+                // remember selected collections
+                val selectedCollections = HashSet<HttpUrl>()
+                val deselectedCollections = HashSet<HttpUrl>()
+                collections.forEach { (url, collection) ->
+                    if (collection.sync)
+                        selectedCollections += url
+                    else
+                        deselectedCollections += url
+                }
+
                 // now refresh homesets and their member collections
                 val itHomeSets = homeSets.iterator()
                 while (itHomeSets.hasNext()) {
@@ -358,6 +368,12 @@ class DavService: IntentService("DavService") {
                                 throw e
                         }
                 }
+
+                // restore selections
+                for (url in selectedCollections)
+                    collections[url]?.let { it.sync = true }
+                for (url in deselectedCollections)
+                    collections[url]?.let { it.sync = false }
             }
 
             db.runInTransaction {
