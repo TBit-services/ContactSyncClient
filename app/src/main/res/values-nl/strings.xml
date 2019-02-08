@@ -85,7 +85,6 @@
   <string name="about_libraries">Libraries</string>
   <string name="about_version">Versie%1$s (%2$d)</string>
   <string name="about_build_date">Gecompileerd op %s</string>
-  <string name="about_copyright">© Ricki Hirner, Bernhard Stockmann (bitfire web engineering GmbH) en contributeurs</string>
   <string name="about_flavor_info">Deze versie is enkel beschikbaar over Google Play</string>
   <string name="about_license_info_no_warranty">Dit programma kom met ABSOLUUT GEEN GARANTIE. Het is gratis software, en je bent welkom dit te herdistribueren onder bepaalde voorwaarden.</string>
   <string name="about_translations_thanks"><![CDATA[<i>Dankzij: </i> %s]]></string>
