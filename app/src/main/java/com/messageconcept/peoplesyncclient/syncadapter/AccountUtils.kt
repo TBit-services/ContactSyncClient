@@ -13,6 +13,7 @@ import com.messageconcept.peoplesyncclient.R
 import com.messageconcept.peoplesyncclient.log.Logger
 import com.messageconcept.peoplesyncclient.model.AppDatabase
 import com.messageconcept.peoplesyncclient.resource.LocalAddressBook
+import com.messageconcept.peoplesyncclient.resource.LocalAddressBook.Companion.USER_DATA_MAIN_ACCOUNT_TYPE
 import java.util.logging.Level
 
 object AccountUtils {
@@ -25,6 +26,18 @@ object AccountUtils {
         val accounts = accountManager.getAccountsByType(context.getString(R.string.account_type))
         val accountNames = accounts.map { it.name }
         Logger.log.log(Level.INFO, "Cleaning up orphaned accounts. Current accounts:", accountNames)
+
+        // Determine if we only have old style address book accounts.
+        // If so, this most likely means that we weren't able to contact the PeopleSync
+        // server yet and sync the address books after an upgrade. In this case, don't delete
+        // the old address books yet.
+        var newAccountAvailable = false
+        accountManager.getAccountsByType(context.getString(R.string.account_type_address_book))
+                .forEach {
+                    if (accountManager.getUserData(it, USER_DATA_MAIN_ACCOUNT_TYPE) == context.getString(R.string.account_type)) {
+                        newAccountAvailable = true;
+                    }
+                }
 
         // delete orphaned address book accounts
         accountManager.getAccountsByType(context.getString(R.string.account_type_address_book))
