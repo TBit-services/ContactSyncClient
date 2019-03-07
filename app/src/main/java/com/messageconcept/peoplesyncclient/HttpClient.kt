@@ -80,7 +80,8 @@ class HttpClient private constructor(
     class Builder(
             val context: Context? = null,
             accountSettings: AccountSettings? = null,
-            val logger: java.util.logging.Logger = Logger.log
+            val logger: java.util.logging.Logger = Logger.log,
+            val useCustomCertManager: Boolean = true
     ) {
         private var certManager: CustomCertManager? = null
         private var certificateAlias: String? = null
@@ -118,9 +119,10 @@ class HttpClient private constructor(
                     Logger.log.log(Level.SEVERE, "Can't set proxy, ignoring", e)
                 }
 
-                // TODO don't instantiate CustomCertManager in .Builder (causes service leaks)
-                customCertManager(CustomCertManager(context, true /*BuildConfig.customCertsUI*/,
-                        !(settings.getBoolean(Settings.DISTRUST_SYSTEM_CERTIFICATES))))
+                if (useCustomCertManager)
+                    // TODO don't instantiate CustomCertManager in .Builder (causes service leaks)
+                    customCertManager(CustomCertManager(context, true /*BuildConfig.customCertsUI*/,
+                            !(settings.getBoolean(Settings.DISTRUST_SYSTEM_CERTIFICATES))))
             }
 
             // use account settings for authentication
