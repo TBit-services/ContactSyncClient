@@ -33,6 +33,7 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
     val loginAdvanced = MutableLiveData<Boolean>()
     val loginUrlManaged = MutableLiveData<Boolean>()
     val loginUsernameManaged = MutableLiveData<Boolean>()
+    val loginPasswordManaged = MutableLiveData<Boolean>()
 
     val baseUrl = MutableLiveData<String>()
     val baseUrlError = MutableLiveData<String>()
@@ -56,6 +57,7 @@ class DefaultLoginCredentialsModel(app: Application): AndroidViewModel(app) {
         loginUseUsernamePassword.value = false
         loginUrlManaged.value = false
         loginUsernameManaged.value = false
+        loginPasswordManaged.value = false
     }
 
     fun clearUrlError(s: Editable) {
