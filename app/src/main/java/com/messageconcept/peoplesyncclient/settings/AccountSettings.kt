@@ -47,6 +47,9 @@ class AccountSettings(
 ) {
 
     companion object {
+        const val KEY_LOGIN_BASE_URL = "login_base_url"
+        const val KEY_LOGIN_USER_NAME = "login_user_name"
+        const val KEY_LOGIN_PASSWORD = "login_password"
 
         const val CURRENT_VERSION = 12
         const val KEY_SETTINGS_VERSION = "version"
