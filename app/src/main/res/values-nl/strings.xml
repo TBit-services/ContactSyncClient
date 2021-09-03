@@ -371,5 +371,5 @@
   <string name="sync_invalid_resources_ignoring">Ik negeer nu een of meer invalid resources</string>
   <!--cert4android-->
   <string name="certificate_notification_connection_security">PeopleSync: Verbinding beveiliging</string>
-  <string name="trust_certificate_unknown_certificate_found">Davdroid is benaderd door een onbekend certificaat. Vertrouwd u dit?</string>
+  <string name="trust_certificate_unknown_certificate_found">PeopleSync is benaderd door een onbekend certificaat. Vertrouwd u dit?</string>
 </resources>
