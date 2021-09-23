@@ -32,6 +32,7 @@
         android:title="@string/login_password_title"/>
 
     <restriction
+        android:defaultValue="false"
         android:key="override_proxy"
         android:restrictionType="bool"
         android:title="@string/override_proxy_title"/>
@@ -42,22 +43,26 @@
         android:title="@string/override_proxy_host_title"/>
 
     <restriction
+        android:defaultValue="8118"
         android:key="override_proxy_port"
         android:restrictionType="integer"
         android:title="@string/override_proxy_port_title"/>
 
     <restriction
+        android:defaultValue="false"
         android:key="distrust_system_certs"
         android:restrictionType="bool"
         android:title="@string/distrust_system_certs_title"/>
 
     <restriction
+        android:defaultValue="14400"
         android:key="default_sync_interval"
         android:restrictionType="integer"
         android:title="@string/default_sync_interval"/>
 
     <!-- per account restrictions -->
     <restriction
+        android:defaultValue="false"
         android:key="wifi_only"
         android:restrictionType="bool"
         android:title="@string/wifi_only_title"/>
