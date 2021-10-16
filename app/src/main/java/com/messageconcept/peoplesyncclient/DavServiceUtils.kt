@@ -168,7 +168,7 @@ object DavServiceUtils {
 
             // cancel previous notification
             NotificationManagerCompat.from(context)
-                    .cancel(service.toString(), NotificationUtils.NOTIFY_REFRESH_COLLECTIONS)
+                    .cancel(serviceId.toString(), NotificationUtils.NOTIFY_REFRESH_COLLECTIONS)
 
             // create authenticating OkHttpClient (credentials taken from account settings)
             HttpClient.Builder(context, AccountSettings(context, account))
