@@ -18,6 +18,7 @@ import android.provider.ContactsContract
 import android.util.Base64
 import androidx.annotation.WorkerThread
 import androidx.core.content.ContextCompat
+import com.messageconcept.peoplesyncclient.DavUtils
 import com.messageconcept.peoplesyncclient.InvalidAccountException
 import com.messageconcept.peoplesyncclient.R
 import com.messageconcept.peoplesyncclient.closeCompat
@@ -135,6 +136,9 @@ class AccountSettings(
                             if (managedPassword != creds.password) {
                                 Logger.log.info("Managed login password changed for ${creds.userName}. Updating account settings.")
                                 am.setPassword(account, managedPassword)
+                                // Request an explicit sync after we changed the account password.
+                                // This should also clear any error notifications.
+                                DavUtils.requestSync(context, account)
                             } else {
                                 // Password is up-to-date
                             }
