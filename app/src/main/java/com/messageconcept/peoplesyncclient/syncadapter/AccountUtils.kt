@@ -44,7 +44,7 @@ object AccountUtils {
             .map { LocalAddressBook(context, it, null) }
             .forEach {
                 try {
-                    if (!accountNames.contains(it.mainAccount.name))
+                    if (!accountNames.contains(it.mainAccount.name) && newAccountAvailable)
                         it.delete()
                 } catch(e: Exception) {
                     Logger.log.log(Level.SEVERE, "Couldn't delete address book account", e)
