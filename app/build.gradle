@@ -15,7 +15,7 @@ android {
         applicationId "com.messageconcept.peoplesyncclient"
 
         //noinspection HighAppVersionCode
-        versionCode 2070040100
+        versionCode 2070040101
         buildConfigField "long", "buildTime", System.currentTimeMillis() + "L"
 
         minSdkVersion 21        // Android 5
@@ -51,7 +51,7 @@ android {
     flavorDimensions "distribution"
     productFlavors {
         standard {
-            versionName "4.1-0-ps"
+            versionName "4.1-1-ps"
         }
     }
 
