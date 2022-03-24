@@ -190,7 +190,7 @@ class UpdateReceiver : BroadcastReceiver() {
 
         if (showNotification) {
             val appIntent = Intent(context, AccountsActivity::class.java)
-            val pendingIntent = PendingIntent.getActivity(context, 0, appIntent, PendingIntent.FLAG_UPDATE_CURRENT)
+            val pendingIntent = PendingIntent.getActivity(context, 0, appIntent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
             val builder = NotificationUtils.newBuilder(context, NotificationUtils.CHANNEL_DEBUG)
                     .setSmallIcon(R.drawable.ic_account_update_notify)
