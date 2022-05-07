@@ -13,12 +13,7 @@ app with more configuration options.
 
 The Contact Sync client app is licensed under the [GPLv3 License](LICENSE).
 
-The Contact Sync server software is proprietary commercial software.
-
-Twitter: [@messageconcept](https://twitter.com/messageconcept)
-
-
-The PeopleSync client app is based on [DAVx⁵](https://www.davx5.com) and parts of DAVx⁵ have been
+The ContactPeopleSync client app is based on [DAVx⁵](https://www.davx5.com)/PeopleSync and parts of DAVx⁵/PeopleSync have been
 outsourced into these libraries:
 
 * [cert4android](https://github.com/bitfireAT/cert4android) – custom certificate management
