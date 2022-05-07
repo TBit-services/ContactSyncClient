@@ -1,10 +1,7 @@
 ![PeopleSync logo](app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
-PeopleSync Client App
+Contact Sync Client App
 =====================
-
-Please see the [PeopleSync product website](https://peoplesync.messageconcept.com) for
-detailed information about the software.
 
 The software is a CardDAV client for businesses using our PeopleSync server
 software. It synchronizes all address lists from the PeopleSync server. The
@@ -14,9 +11,9 @@ CalDAV we recommend to use the [DAVx⁵](https://www.davx5.com)
 app with more configuration options.
 
 
-The PeopleSync client app is licensed under the [GPLv3 License](LICENSE).
+The Contact Sync client app is licensed under the [GPLv3 License](LICENSE).
 
-The PeopleSync server software is proprietary commercial software.
+The Contact Sync server software is proprietary commercial software.
 
 Twitter: [@messageconcept](https://twitter.com/messageconcept)
 
